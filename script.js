@@ -1,3 +1,4 @@
+var en = document.getElementsByTagName("html")[0].getAttribute("lang") == "en";
 var skills = {
   "prog-languages": [
     ["HTML", 9],
@@ -39,17 +40,24 @@ var skills = {
     ["Rollup, Webpack, Gulp", 6],
   ],
   apis: [
-    ["Stripe (payments)", 5],
-    ["Algolia (search)", 4],
+    ["Stripe (" + (en ? "payments" : "pagos") + ")", 5],
+    ["Algolia (" + (en ? "search" : "búsqueda") + ")", 4],
     ["SendGrid (email)", 4],
   ],
 
-  languages: [
-    ["English", 10],
-    ["Spanish - Español", 10],
-    ["Chinese - 中文", 3],
-    ["Thai - ไทย", 2],
-  ],
+  languages: en
+    ? [
+        ["English", 10],
+        ["Spanish - Español", 10],
+        ["Chinese - 中文", 3],
+        ["Thai - ไทย", 2],
+      ]
+    : [
+        ["Inglés - English", 10],
+        ["Español", 10],
+        ["Chino - 中文", 3],
+        ["Tailandés - ไทย", 2],
+      ],
 };
 
 for (var k in skills) {

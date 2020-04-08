@@ -257,6 +257,10 @@ path {
 
   .print {
     display: block;
-    transform: translateX(-0.5em);
+    transform: translateX(-1em);
   }
+}
+
+#experience a {
+  color: #0476d0;
 }
