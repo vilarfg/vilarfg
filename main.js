@@ -81,7 +81,8 @@ for (var k in skills) {
   }
 }
 
-var s = [")com", "^gmail.", "&@", "#utn", "_fgv."]
+var s = ")com|^gmail.|&@|#utn|_fgv."
+  .split("|")
   .map(function (s) {
     return s.slice(1);
   })
