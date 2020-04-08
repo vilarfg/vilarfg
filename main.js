@@ -68,6 +68,7 @@ for (var k in skills) {
 
     var spanSkillLevel = document.createElement("span");
     spanSkillLevel.className = "skill-level";
+    spanSkillLevel.setAttribute("title", skill[1]);
     var skillLevel = skill[1] / 2;
     for (var j = 0; j < 5; j++) {
       var circleSpan = document.createElement("span");
