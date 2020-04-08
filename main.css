@@ -225,3 +225,38 @@ address {
 #certifications li:hover .job-title {
   font-weight: 700;
 }
+
+svg {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+path {
+  fill: currentColor;
+}
+
+.social {
+  display: flex;
+  margin-top: 0.5em;
+  color: #888;
+}
+
+.social li {
+  display: block;
+  margin-right: 0.5em;
+}
+
+.print {
+  display: none;
+}
+
+@media print {
+  .noprint {
+    display: none;
+  }
+
+  .print {
+    display: block;
+    transform: translateX(-0.5em);
+  }
+}
