@@ -69,10 +69,10 @@ for (var k in skills) {
     var spanSkillLevel = document.createElement("span");
     spanSkillLevel.className = "skill-level";
     var skillLevel = skill[1] / 2;
-    for (let i = 0; i < 5; i++) {
+    for (var j = 0; j < 5; j++) {
       var circleSpan = document.createElement("span");
       circleSpan.className =
-        skillLevel >= i + 1 ? "f" : skillLevel - i > 0 ? "h" : "e";
+        skillLevel >= j + 1 ? "f" : skillLevel - j > 0 ? "h" : "e";
       spanSkillLevel.appendChild(circleSpan);
     }
     li.appendChild(spanSkillLevel);
