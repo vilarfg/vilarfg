@@ -47,17 +47,17 @@ var skills = {
 
   languages: en
     ? [
-        ["English", 10],
-        ["Spanish - Español", 10],
-        ["Chinese - 中文", 3],
-        ["Thai - ไทย", 2],
-      ]
+      ["English", 10],
+      ["Spanish - Español", 10],
+      ["Chinese - 中文", 3],
+      ["Thai - ไทย", 2],
+    ]
     : [
-        ["Inglés - English", 10],
-        ["Español", 10],
-        ["Chino - 中文", 3],
-        ["Tailandés - ไทย", 2],
-      ],
+      ["Inglés - English", 10],
+      ["Español", 10],
+      ["Chino - 中文", 3],
+      ["Tailandés - ไทย", 2],
+    ],
 };
 
 for (var k in skills) {
@@ -76,7 +76,7 @@ for (var k in skills) {
 
     var spanSkillLevel = document.createElement("span");
     spanSkillLevel.className = "skill-level";
-    spanSkillLevel.setAttribute("title", skill[1]);
+    spanSkillLevel.setAttribute("title", skill[1].toString() + "0%");
     var skillLevel = skill[1] / 2;
     for (var j = 0; j < 5; j++) {
       var circleSpan = document.createElement("span");
